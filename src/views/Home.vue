@@ -16,7 +16,7 @@ import HelloWorld from '@/components/HelloWorld.vue'; // @ is an alias to /src
     },
 })
 class Home extends Vue {
-    private msg: string = 'Welcome to Your Vue.js + TypeScript App';
+    private msg: string = 'Welcome to Your RichRich';
 }
 
 export default Home;
