@@ -1,76 +1,39 @@
 <template>
-    <div id="app">
-        <b-navbar
-            class="app__header"
-            toggleable="lg"
-            type="dark"
-            variant="info"
-        >
-            <b-navbar-brand
-                to="/"
-                class="header__brand"
-            >
-                RichRich
-            </b-navbar-brand>
+    <v-app>
+        <v-app-bar app color="primary" dark>
+            <div class="d-flex align-center">
+                <v-img alt="Vuetify Logo" class="shrink mr-2" contain src="https://cdn.vuetifyjs.com/images/logos/vuetify-logo-dark.png" transition="scale-transition" width="40" />
 
-            <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
+                <v-img alt="Vuetify Name" class="shrink mt-1 hidden-sm-and-down" contain min-width="100" src="https://cdn.vuetifyjs.com/images/logos/vuetify-name-dark.png" width="100" />
+            </div>
 
-            <b-collapse
-                id="nav-collapse"
-                is-nav
-                class="header__collapse"
-            >
-                <b-navbar-nav class="header__collapse__link">
-                    <b-nav-item to="/">
-                        Home
-                    </b-nav-item>
+            <v-spacer></v-spacer>
 
-                    <b-nav-item to="/about">
-                        About
-                    </b-nav-item>
-                </b-navbar-nav>
+            <v-btn href="https://github.com/vuetifyjs/vuetify/releases/latest" target="_blank" text>
+                <span class="mr-2">Latest Release</span>
+                <v-icon>mdi-open-in-new</v-icon>
+            </v-btn>
+        </v-app-bar>
 
-                <!-- Right aligned nav items -->
-                <b-navbar-nav class="ml-auto">
-                    <b-nav-item-dropdown
-                        text="Lang"
-                        right
-                    >
-                        <b-dropdown-item href="#">EN</b-dropdown-item>
-                        <b-dropdown-item href="#">ES</b-dropdown-item>
-                        <b-dropdown-item href="#">RU</b-dropdown-item>
-                        <b-dropdown-item href="#">FA</b-dropdown-item>
-                    </b-nav-item-dropdown>
-
-                    <b-nav-item-dropdown right>
-                        <!-- Using 'button-content' slot -->
-                        <template v-slot:button-content>
-                            <em>User</em>
-                        </template>
-                        <b-dropdown-item href="#">Profile</b-dropdown-item>
-                        <b-dropdown-item href="#">Sign Out</b-dropdown-item>
-                    </b-nav-item-dropdown>
-                </b-navbar-nav>
-            </b-collapse>
-        </b-navbar>
-        <router-view class="app__page" />
-    </div>
+        <v-main>
+            <HelloWorld />
+        </v-main>
+    </v-app>
 </template>
 
-<style lang="scss">
-#app {
-    display: flex;
-    flex-direction: column;
-    font-family: Avenir, Helvetica, Arial, sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    text-align: center;
-    color: #2c3e50;
-    height: 100vh;
-}
+<script lang="ts">
+import Vue from 'vue';
+import HelloWorld from '@/components/HelloWorld.vue';
 
-.app__page {
-    flex: auto;
-    overflow: auto;
-}
-</style>
+export default Vue.extend({
+    name: 'App',
+
+    components: {
+        HelloWorld,
+    },
+
+    data: () => ({
+        //
+    }),
+});
+</script>
