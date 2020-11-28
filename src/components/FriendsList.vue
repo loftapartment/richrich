@@ -19,7 +19,7 @@
                             <v-list-item-subtitle>NTD {{ friend.amount_owed }}</v-list-item-subtitle>
                         </v-list-item-content>
                     </v-list-item>
-                    <v-divider v-if="index < friend.length - 1" :key="index" inset></v-divider>
+                    <v-divider v-if="index < friends.length - 1" :key="index" inset></v-divider>
                 </template>
             </v-list>
         </v-card>
