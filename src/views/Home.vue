@@ -1,7 +1,10 @@
 <template>
     <div class="home">
         <h1>Home</h1>
-        <FriendsList />
+        <div class="dashboard">
+            <FriendsList class="dashboard__friends" />
+            <router-view></router-view>
+        </div>
     </div>
 </template>
 
@@ -15,3 +18,13 @@ export default {
     },
 };
 </script>
+
+<style lang="scss" scoped>
+.dashboard {
+    display: flex;
+
+    &__friends {
+        flex: 1;
+    }
+}
+</style>

@@ -10,6 +10,13 @@ const routes: Array<RouteConfig> = [
         path: '/',
         name: 'Home',
         component: Home,
+        children: [
+            {
+                path: '/profile/:id',
+                name: 'Profile',
+                component: About,
+            },
+        ],
     },
     {
         path: '/about',
