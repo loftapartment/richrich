@@ -1,14 +1,17 @@
 <template>
     <div class="home">
         <h1>Home</h1>
+        <FriendsList />
     </div>
 </template>
 
-<script lang="ts">
-import Vue from 'vue';
+<script>
+import FriendsList from '@/components/FriendsList';
 
-export default Vue.extend({
+export default {
     name: 'Home',
-    components: {},
-});
+    components: {
+        FriendsList,
+    },
+};
 </script>
