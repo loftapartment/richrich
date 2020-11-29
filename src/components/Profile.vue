@@ -1,10 +1,10 @@
 <template>
     <v-card class="mx-auto" max-width="344">
-        <v-img src="https://cdn.vuetifyjs.com/images/cards/sunshine.jpg" height="200px"></v-img>
+        <v-img :src="friend.avatar" contain height="200px"></v-img>
 
-        <v-card-title> User {{ $route.params.id }} </v-card-title>
+        <v-card-title> {{ friend.name }} </v-card-title>
 
-        <v-card-subtitle> 1,000 miles of wonder </v-card-subtitle>
+        <v-card-subtitle> Total Owed: NTD {{ friend.amount_owed }} </v-card-subtitle>
 
         <v-card-actions>
             <v-btn color="orange lighten-2" text> Explore </v-btn>
@@ -27,6 +27,7 @@
 
 <script>
 export default {
+    props: ['friend'],
     data() {
         return {
             show: false,

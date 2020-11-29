@@ -10,28 +10,28 @@ const names = [
         id: 2,
         avatar: 'https://cdn.vuetifyjs.com/images/lists/2.jpg',
         name: 'User2',
-        amount_owed: 200,
+        amount_owed: 322,
     },
 
     {
         id: 3,
         avatar: 'https://cdn.vuetifyjs.com/images/lists/3.jpg',
         name: 'User3',
-        amount_owed: 200,
+        amount_owed: 421,
     },
 
     {
         id: 4,
         avatar: 'https://cdn.vuetifyjs.com/images/lists/4.jpg',
         name: 'User4',
-        amount_owed: 200,
+        amount_owed: 1333,
     },
 
     {
         id: 5,
         avatar: 'https://cdn.vuetifyjs.com/images/lists/5.jpg',
         name: 'User5',
-        amount_owed: 200,
+        amount_owed: 44444,
     },
 ];
 

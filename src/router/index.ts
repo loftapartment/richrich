@@ -15,6 +15,7 @@ const routes: Array<RouteConfig> = [
                 path: '/profile/:id',
                 name: 'Profile',
                 component: Profile,
+                props: true,
             },
         ],
     },
