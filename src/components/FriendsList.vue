@@ -10,7 +10,7 @@
             </v-toolbar>
             <v-list three-line>
                 <template v-for="(friend, index) in friends">
-                    <v-list-item :key="friend.title" @click="$router.push({ path: `/profile/${friend.id}` })">
+                    <v-list-item :key="friend.title" @click="$router.push({ path: `/profile/${friend.id}` }, () => {})">
                         <v-list-item-avatar>
                             <v-img :src="friend.avatar"></v-img>
                         </v-list-item-avatar>

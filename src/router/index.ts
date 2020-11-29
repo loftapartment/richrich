@@ -1,7 +1,7 @@
 import Vue from 'vue';
 import VueRouter, { RouteConfig } from 'vue-router';
 import Home from '@/views/Home.vue';
-import About from '@/views/About.vue';
+import Profile from '@/components/Profile.vue';
 
 Vue.use(VueRouter);
 
@@ -14,7 +14,7 @@ const routes: Array<RouteConfig> = [
             {
                 path: '/profile/:id',
                 name: 'Profile',
-                component: About,
+                component: Profile,
             },
         ],
     },

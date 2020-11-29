@@ -1,9 +1,10 @@
 <template>
     <div class="home">
-        <h1>Home</h1>
         <div class="dashboard">
             <FriendsList class="dashboard__friends" />
-            <router-view></router-view>
+            <div class="dashboard__profile">
+                <router-view></router-view>
+            </div>
         </div>
     </div>
 </template>
@@ -23,7 +24,8 @@ export default {
 .dashboard {
     display: flex;
 
-    &__friends {
+    &__friends,
+    &__profile {
         flex: 1;
     }
 }
