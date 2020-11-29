@@ -1,5 +1,5 @@
 <template>
-    <v-card class="mx-auto" max-width="344">
+    <v-card class="mx-auto">
         <v-img :src="friend.avatar" contain height="200px"></v-img>
 
         <v-card-title> {{ friend.name }} </v-card-title>
@@ -7,7 +7,7 @@
         <v-card-subtitle> Total Owed: NTD {{ friend.amount_owed }} </v-card-subtitle>
 
         <v-card-actions>
-            <v-btn color="orange lighten-2" text> Explore </v-btn>
+            <v-btn color="pink" text> Explore </v-btn>
 
             <v-spacer></v-spacer>
 

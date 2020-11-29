@@ -1,7 +1,7 @@
 <template>
     <div class="friends-list">
-        <v-card max-width="450" class="mx-auto">
-            <v-toolbar color="primary" dark>
+        <v-card class="mx-auto">
+            <v-toolbar color="pink" dark>
                 <v-toolbar-title>Friends</v-toolbar-title>
                 <v-spacer></v-spacer>
                 <v-btn icon>

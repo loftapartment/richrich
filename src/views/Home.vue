@@ -23,6 +23,7 @@ export default {
 <style lang="scss" scoped>
 .dashboard {
     display: flex;
+    gap: 10px;
 
     &__friends,
     &__profile {
