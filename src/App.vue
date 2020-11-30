@@ -28,5 +28,9 @@ export default {
     data() {
         return {};
     },
+    created() {
+        // get all the users when app init
+        this.$store.dispatch('getAllUsers');
+    },
 };
 </script>

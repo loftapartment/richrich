@@ -27,15 +27,14 @@
 </template>
 
 <script>
-import friends from '@/data/names';
 export default {
     data() {
-        return {
-            friends: [],
-        };
+        return {};
     },
-    created() {
-        this.friends = friends;
+    computed: {
+        friends() {
+            return this.$store.state.users;
+        },
     },
 };
 </script>
