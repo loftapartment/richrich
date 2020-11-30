@@ -27,11 +27,15 @@
 
 <script>
 export default {
-    props: ['friend'],
     data() {
         return {
             show: false,
         };
+    },
+    computed: {
+        friend() {
+            return this.$store.getters.getUserById(this.$route.params.id);
+        },
     },
 };
 </script>
